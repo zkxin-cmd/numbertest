@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机整数生成器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>随机整数生成器</h1>
+        <label for="averageInput">输入平均数：</label>
+        <input type="number" id="averageInput" step="0.01" placeholder="平均数">
+        
+        <label for="minInput">输入最小范围：</label>
+        <input type="number" id="minInput" placeholder="最小范围">
+        
+        <label for="maxInput">输入最大范围：</label>
+        <input type="number" id="maxInput" placeholder="最大范围">
+        
+        <label for="countInput">输入每组随机数个数：</label>
+        <input type="number" id="countInput" placeholder="个数">
+        
+        <label for="groupsInput">输入生成组数：</label>
+        <input type="number" id="groupsInput" placeholder="组数">
+        
+        <button onclick="generateRandomNumbers()">生成随机整数</button>
+        
+        <h2>生成的随机整数：</h2>
+        <div id="randomNumbersContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
